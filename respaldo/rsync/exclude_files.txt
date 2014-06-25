@@ -1,0 +1,11 @@
+*~
+/home/aaf/Ubuntu One
+*.backup*
+.[Cc]ache*
+.dropbox*
+.ecryptfs
+.thumbnails*
+.[Tt]rash
+.gvfs
+.[Pp]rivate
+Private

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CPU=`lscpu | grep "Architecture" | awk '{ print $2}'`
+RAM=`lshw | grep -A 3 "*-memory" | grep "size" | awk '{ print $2 }' 2>/dev/null`
+for i in `df | grep '/dev/' | awk '{print $1}'`; do
+	VOLS=`echo $i | sed 's/\/dev\///g' | sed 's/mapper\///g'`
+done
+
+echo "CPU: $CPU"
+echo "$RAM de RAM"
+echo $VOLS

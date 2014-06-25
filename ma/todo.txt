@@ -1,0 +1,11 @@
+- CPU
+lscpu
+- RAM
+lshw
+buscar *-memory, size
+-Volumes
+df
+ls -lha /dev/mapper | grep ../
+
+- Kernel
+lshal
